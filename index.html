@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Hogwarts</title>
+    <link href="http://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header class="header">
+            <!-- Title Area -->
+            <h1 id="title" class="text-center"> Hogwarts Application Form </h1>
+            <p id="description" class="description text-center">Enter your submission information below;</p>
+        </header>
+
+        <form id="survey-form">
+
+            <!-- Requested information -->
+            <div class="form-group">
+                <label id="name-label" for="name"> Name</label>
+                <input type="text" id="name" required placeholder="Name">
+            </div>
+
+            <div class="form-group">
+                <label id="email-label" for="email"> Email</label>
+                <input type="email" id="email" required placeholder="email">
+            </div>
+
+            <div class="form-group">
+                <label id="number-label" for="number"> What is your Age? <span class="clue">(Optional)</span></label>
+                <input type="number" name="" id="number" min="0" max="99" placeholder="Age">
+            </div>
+
+            <div class="form-group">
+                <label id="address" for="address"> Address </label>
+                <input type="text" id="address" placeholder="Address" required>
+            </div>
+
+            <!-- Dropdown Menu -->
+            <div class="form-group">
+                <p>What house do you prefer? </p>
+                <select name="house" id="dropdown" class="form-control" required>
+                    <option disabled selected value>Select House</option>
+                    <option value="Griffindor">Griffindor</option>
+                    <option value="Slytherin">Slytherin</option>
+                    <option value="Hufflepuff">Hufflepuff</option>
+                    <option value="Ravenclaw">Ravenclaw</option>
+                </select>
+            </div>
+
+
+            <!-- Radio Buttons -->
+            <div class="form-group">
+
+                <p>What is Your blood type?</p>
+
+                <label>
+                    <input type="radio" name="blood" id="half-blood" value="1">
+                    Half-blood
+                </label>
+
+                <label>
+                    <input type="radio" name="blood" id="Pure-blood" value="2">
+                    Pure-blood
+                </label>
+
+                <label>
+                    <input type="radio" name="blood" id="Muggle-born" value="3">
+                    Muggle-born
+                </label>
+
+            </div>
+
+            <!-- Quidditch Checkbox -->
+            <div class="form-group">
+
+                <p> Which position do you want to play in Quidditch? <span class="clue">(Select all that apply)</span>
+                </p>
+
+                <label>
+                    <input type="checkbox" name="Quidditch" value="seeker" class="input-checkbox">
+                    Seeker
+                </label>
+
+                <label>
+                    <input type="checkbox" name="Quidditch" value="beater" class="input-checkbox">
+                    Beater
+                </label>
+
+                <label>
+                    <input type="checkbox" name="Quidditch" value="keeper" class="input-checkbox">
+                    Keeper
+                </label>
+
+                <label>
+                    <input type="checkbox" name="Quidditch" value="chaser" class="input-checkbox">
+                    Chaser
+                </label>
+
+                <label>
+                    <input type="checkbox" name="Quidditch" value="don't want to play" class="input-checkbox">
+                    Don't want to play
+                </label>
+
+            </div>
+
+            <!-- Textarea -->
+            <div class="form-group">
+
+                <p>Any comments;</p>
+                <textarea name="comment" id="comments" class="input-textarea" placeholder="lumos..."></textarea>
+
+            </div>
+
+            <!-- Button -->
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+    </div>
+
+
+    </form>
+
+
+
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>

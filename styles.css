@@ -1,0 +1,178 @@
+* {
+    font-family: 'Harry Potter', sans-serif;
+    box-sizing: border-box;
+
+}
+
+
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://images.unsplash.com/photo-1598153346810-860daa814c4b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+}
+
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    padding: 20px;
+
+}
+
+input,
+button,
+select,
+textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+
+}
+
+p {
+    font-size: 1.125rem;
+}
+
+
+
+
+#description {
+    font-size: 1.2em;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.clue {
+    margin-left: 0.25rem;
+    font-size: 0.9rem;
+    display: block;
+    padding-top: 5px;
+
+}
+
+.input-textarea {
+    min-height: 120px;
+    width: 100%;
+    padding: 0.625rem;
+    resize: vertical;
+}
+
+#number {
+
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#name {
+
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#email {
+
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#address {
+
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+.container {
+
+    background-color: rgb(238, 186, 48, 0.9);
+    border-radius: 10px;
+    padding: 15px 25px;
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 3.125rem auto 0 auto;
+
+}
+
+#survey-form {
+    margin: 30px 40px;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+
+.form-group {
+
+    border-bottom: 1px solid #d3a625;
+    padding: 5px;
+}
+
+.form-group:nth-last-child(2) {
+    border-bottom: none;
+}
+
+.form-group:last-child {
+    border-bottom: none;
+}
+
+.form-group:first-child {
+    border-top: 1px solid #d3a625;
+}
+
+
+/* Buttons */
+
+button {
+
+    border: 1px solid #5d5d5d;
+    border-radius: 10px;
+    color: #5d5d5d;
+    display: inline-block;
+    padding: 15px 35px;
+    text-decoration: none;
+    text-align: center;
+    margin: 25px 0;
+    text-transform: uppercase;
+    transition: all 200ms ease-in-out;
+}
+
+button:hover,
+button:focus {
+
+    background-color: #ae0001;
+    border-color: #aaaaaa;
+    color: #aaaaaa;
+    cursor: pointer;
+}
+
+
+/* Media */
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
